@@ -46,12 +46,12 @@ class Upgrade {
     }
 
     nextLevel(){
-        this.setLevel(this.level + 1);
+        this.setLevel(this.level * 2);
     }
 
     updateEffect(){
         this.effect = this.getEffect(this.level);
-        this.effectNext = this.getEffect(this.level + 1);
+        this.effectNext = this.getEffect(this.level * 2);
     }
 
     updatePrice(){
